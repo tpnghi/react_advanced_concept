@@ -1,7 +1,5 @@
 import React from "react";
 
-// PerimeterCalculator: (obj)=>number
-
 function withPerimeter(GeometryComponent, input, PerimeterCalculator) {
   return class extends React.Component {
     constructor(props) {
