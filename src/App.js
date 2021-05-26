@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Rectangle from "./components/Rectangle.js";
+import Triangle from "./components/Triangle.js";
+import Geometry from "./components/Geometry.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* use render props */}
+      {/* <Geometry
+        render={(data, handleChange, handleSubmit) => (
+          <Rectangle
+            data={data}
+            handleChange={handleChange}
+            handleSubmit={handleSubmit}
+          />
+        )}
+        input={{ length: 0, width: 0 }}
+        calculate={({ length, width }) => 2 * (Number(length) + Number(width))}
+      /> */}
+      {/* use HOC */}
+      <Triangle />
     </div>
   );
 }
