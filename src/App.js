@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {/* use render props */}
-      {/* <Geometry
+      <Geometry
         render={(data, handleChange, handleSubmit) => (
           <Rectangle
             data={data}
@@ -17,7 +17,7 @@ function App() {
         )}
         input={{ length: 0, width: 0 }}
         calculate={({ length, width }) => 2 * (Number(length) + Number(width))}
-      /> */}
+      />
       {/* use HOC */}
       <Triangle />
     </div>

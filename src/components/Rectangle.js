@@ -8,8 +8,8 @@ import withPerimeter from "./withPerimeter";
 
 class Rectangle extends React.Component {
   render() {
-    const { data, answer, handleSubmit, handleChange } = this.props;
-    const { length, width } = data;
+    const { data, handleSubmit, handleChange } = this.props;
+    const { length, width, answer } = data;
     return (
       <Container>
         <Form onSubmit={handleSubmit}>

@@ -20,19 +20,14 @@ class Geometry extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    const answer = this.props.calculate(this.props.data);
+    const answer = this.props.calculate(this.state.data);
     this.setState({ ...this.state, answer });
   }
 
   render() {
     return (
       <div>
-        {" "}
-        {this.props.render(
-          this.state.data,
-          this.handleChange,
-          this.handleSubmit
-        )}
+        {this.props.render(this.state, this.handleChange, this.handleSubmit)}
       </div>
     );
   }
