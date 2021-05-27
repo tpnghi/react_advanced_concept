@@ -1,11 +1,11 @@
-import "./App.css";
-import Rectangle from "./components/Rectangle.js";
-import Triangle from "./components/Triangle.js";
-import Geometry from "./components/Geometry.js";
+import './App.css';
+import Rectangle from './componenta/Rectangle.js.js';
+import Triangle from './componenta/Triangle.js';
+import Geometry from './componenta/Geometry.js.js';
 
 function App() {
   return (
-    <div className="App">
+    <div className='App'>
       {/* use render props */}
       <Geometry
         render={(data, handleChange, handleSubmit) => (

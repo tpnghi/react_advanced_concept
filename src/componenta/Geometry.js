@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 class Geometry extends React.Component {
   constructor(props) {
@@ -14,7 +14,10 @@ class Geometry extends React.Component {
     const value = event.target.value;
     this.setState({
       ...this.state,
-      data: { ...this.state.data, [event.target.name]: value },
+      data: {
+        ...this.state.data,
+        [event.target.name]: value,
+      },
     });
   }
 

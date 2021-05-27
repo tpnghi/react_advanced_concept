@@ -1,11 +1,10 @@
-import React from "react";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Container from "react-bootstrap/Container";
-import withPerimeter from "./withPerimeter";
-
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import withPerimeter from './withPerimeter';
 class Triangle extends React.Component {
   render() {
     const { data, answer, handleSubmit, handleChange } = this.props;
@@ -19,24 +18,24 @@ class Triangle extends React.Component {
               <Col>
                 <Form.Control
                   value={a}
-                  type="number"
-                  name="a"
+                  type='number'
+                  name='a'
                   onChange={handleChange}
                 />
               </Col>
               <Col>
                 <Form.Control
                   value={b}
-                  type="number"
-                  name="b"
+                  type='number'
+                  name='b'
                   onChange={handleChange}
                 />
               </Col>
               <Col>
                 <Form.Control
                   value={c}
-                  type="number"
-                  name="c"
+                  type='number'
+                  name='c'
                   onChange={handleChange}
                 />
               </Col>
@@ -44,7 +43,7 @@ class Triangle extends React.Component {
           </Form.Group>
           <Row>
             <Col>
-              <Button variant="primary" type="submit" block>
+              <Button variant='primary' type='submit' block>
                 Submit
               </Button>
               <Form.Control
